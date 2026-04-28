@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="TecnoSystem Game, Celular & Informática - Os melhores iPhones, celulares, videogames e assistência técnica especializada em Mogi Guaçu - SP.">
     <meta name="keywords" content="iPhone em Mogi Guaçu, assistência técnica Mogi Guaçu, conserto de celular, videogames, computadores, loja de informática">
-    <link rel="shortcut icon" type="imagex/png" href="gemini-svg (1).png">
-    <title>TecnoSystem | Celulares, Games e Informática em Mogi Guaçu</title>
+    <link rel="shortcut icon" type="imagex/png" href="unnamed-removebg-preview.png">
+    <title>NC Celulares</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-        <!-- Ícones Font Awesome (Para logos oficiais de redes sociais) -->
+    <!-- Ícones Font Awesome (Para logos oficiais de redes sociais) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Google Fonts -->
@@ -29,11 +29,13 @@
                         sans: ['Inter', 'sans-serif'],
                     },
                     colors: {
-                        'neon-green': '#25db00', // Verde vibrante
+                        /* ALTERADO: era '#0023ecf3' (azul-esverdeado), agora paleta azul coesa */
+                        'neon-green': '#3B82F6', /* Azul principal — blue-500 */
                     },
                     boxShadow: {
-                        'neon': '0 0 15px rgba(37, 219, 0, 0.4)',
-                        'neon-hover': '0 0 25px rgba(37, 219, 0, 0.7)',
+                        /* ALTERADO: sombras agora em azul */
+                        'neon': '0 0 15px rgba(59, 130, 246, 0.4)',
+                        'neon-hover': '0 0 25px rgba(59, 130, 246, 0.7)',
                     }
                 }
             }
@@ -57,12 +59,12 @@
         
         /* Ajuste do fundo preto puro e gradiente escuro */
         body {
-            background-color: #000000; /* Preto absoluto */
+            background-color: #000000;
             background-image: radial-gradient(circle at top right, #111111 0%, #000000 100%);
             color: #ffffff;
         }
 
-                .nav-link-anim {
+        .nav-link-anim {
             position: relative;
             padding-bottom: 4px;
         }
@@ -73,7 +75,8 @@
             height: 2px;
             bottom: 0;
             left: 0;
-            background-color: #25db00;
+            /* ALTERADO: era #25db00 (verde), agora #3B82F6 (azul) */
+            background-color: #3B82F6;
             transform: scaleX(0);
             transform-origin: bottom right;
             transition: transform 0.3s ease-out;
@@ -88,16 +91,17 @@
 
     <!-- Número do WhatsApp centralizado para facilitar edição -->
     <script>
-        const whatsappNumber = "5519996489111";
+        const whatsappNumber = "55199999999";
         const whatsappMessage = encodeURIComponent("Olá! Vim pelo site e gostaria de saber mais sobre os produtos e serviços.");
         const whatsappLink = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`;
     </script>
 
     <!-- Botão Fixo WhatsApp -->
-    <a href="https://api.whatsapp.com/send?phone=5519996489111&text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais." 
+    <a href="" 
        target="_blank"
-       class="fixed bottom-6 right-6 z-50 bg-neon-green text-black p-4 rounded-full shadow-neon hover:shadow-neon-hover hover:scale-110 transition-all duration-300 flex items-center justify-center"
+       class="fixed bottom-6 right-6 z-50 bg-neon-green text-white p-4 rounded-full shadow-neon hover:shadow-neon-hover hover:scale-110 transition-all duration-300 flex items-center justify-center"
        aria-label="Falar no WhatsApp">
+        <!-- ALTERADO: text-black → text-white (azul escuro precisa de texto branco para contraste) -->
         <i class="fa-brands fa-whatsapp text-2xl"></i>
     </a>
 
@@ -106,7 +110,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center gap-2">
                 <i data-lucide="cpu" class="w-8 h-8 text-neon-green"></i>
-                <h1 class="text-2xl font-bold tracking-tighter text-white">Tecno<span class="text-neon-green">System</span></h1>
+                <h1 class="text-2xl font-bold tracking-tighter text-white">NC<span class="text-neon-green"> Celulares</span></h1>
             </div>
             <nav class="hidden md:flex items-center gap-8">
                 <a href="#produtos" class="nav-link-anim text-zinc-300 hover:text-white transition-colors">Produtos</a>
@@ -135,16 +139,18 @@
                             Loja Física em Mogi Guaçu - SP
                         </div>
                         <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-                            Os melhores <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-green-400">iPhones</span>, celulares e videogames de Mogi Guaçu
+                            Os melhores <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-blue-400">iPhones</span>, celulares e videogames.
+                            <!-- ALTERADO: gradiente era from-neon-green to-green-400, agora to-blue-400 -->
                         </h2>
                         <p class="text-lg md:text-xl text-zinc-400 mb-8 max-w-2xl mx-auto lg:mx-0">
                             Produtos originais, garantia e assistência técnica especializada. Tudo o que você precisa em tecnologia em um só lugar.
                         </p>
                         
                         <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <a href="https://api.whatsapp.com/send?phone=5519996489111&text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais." 
+                            <a href="" 
                                target="_blank"
-                               class="bg-neon-green hover:brightness-110 text-black font-bold py-4 px-8 rounded-xl shadow-neon hover:shadow-neon-hover transition-all duration-300 flex items-center justify-center gap-2 text-lg">
+                               class="bg-neon-green hover:brightness-110 text-white font-bold py-4 px-8 rounded-xl shadow-neon hover:shadow-neon-hover transition-all duration-300 flex items-center justify-center gap-2 text-lg">
+                               <!-- ALTERADO: text-black → text-white -->
                                 <i class="fa-brands fa-whatsapp text-2xl"></i>
                                 Falar no WhatsApp
                             </a>
@@ -156,7 +162,6 @@
                     </div>
 
                     <div class="fade-in-section relative mx-auto w-full max-w-md lg:max-w-full">
-                        <!-- Composição Visual Tech -->
                         <div class="relative rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl">
                             <img src="https://s2-oglobo.glbimg.com/rh2jJMA3WyMm0qHImqp1lsJddtU=/0x0:2400x1630/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/l/r/bMs1ZuRZCBVVOY0PFhlQ/apple-iphone-15-pro-lineup-5-up-screen.png" alt="Mockup de iPhone e Videogames" class="w-full h-auto object-cover opacity-90 hover:opacity-100 transition-opacity">
                             <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
@@ -164,6 +169,7 @@
                             <!-- Badges Flutuantes -->
                             <div class="absolute bottom-6 left-6 bg-black/80 backdrop-blur-sm border border-zinc-800 p-3 rounded-lg flex items-center gap-3">
                                 <div class="bg-neon-green/20 p-2 rounded-full text-neon-green">
+                                    <!-- ALTERADO: bg e text usam neon-green (agora azul) -->
                                     <i data-lucide="shield-check" class="w-6 h-6"></i>
                                 </div>
                                 <div>
@@ -183,6 +189,7 @@
                 <div class="text-center mb-16 fade-in-section">
                     <div class="flex items-center justify-center gap-2 mb-4">
                         <div class="flex text-neon-green">
+                            <!-- ALTERADO: estrelas usam text-neon-green (agora azul) -->
                             <i data-lucide="star" class="w-6 h-6 fill-current"></i>
                             <i data-lucide="star" class="w-6 h-6 fill-current"></i>
                             <i data-lucide="star" class="w-6 h-6 fill-current"></i>
@@ -201,9 +208,10 @@
                         <p class="text-zinc-300 italic mb-6">"Um ótimo atendimento produto de qualidade e procedência.
 E um preço muito acessível"</p>
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-neon-green font-bold text-lg border border-zinc-800">M</div>
+                            <div class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-neon-green font-bold text-lg border border-zinc-800">A</div>
+                            <!-- ALTERADO: text-neon-green (agora azul) nos avatares -->
                             <div>
-                                <h4 class="font-bold text-white text-sm">Marcelo Biro Silva</h4>
+                                <h4 class="font-bold text-white text-sm">Anonimo</h4>
                                 <p class="text-xs text-zinc-400">Avaliação verificada</p>
                             </div>
                         </div>
@@ -215,9 +223,9 @@ E um preço muito acessível"</p>
                         <p class="text-zinc-300 italic mb-6">"Atendimento excelente, cuidado com o cliente e produtos de qualidade!
 Sempre que preciso de algo com celular ou notebook procuro por eles 😊"</p>
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-neon-green font-bold text-lg border border-zinc-800">G</div>
+                            <div class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-neon-green font-bold text-lg border border-zinc-800">A</div>
                             <div>
-                                <h4 class="font-bold text-white text-sm">Gabriela Bonfanti</h4>
+                                <h4 class="font-bold text-white text-sm">Anonimo</h4>
                                 <p class="text-xs text-zinc-400">Avaliação verificada</p>
                             </div>
                         </div>
@@ -228,9 +236,9 @@ Sempre que preciso de algo com celular ou notebook procuro por eles 😊"</p>
                         <i data-lucide="quote" class="absolute top-6 right-6 w-8 h-8 text-zinc-700 opacity-50"></i>
                         <p class="text-zinc-300 italic mb-6">"Excelente atendimento, transparência, conhecimento técnico e agilidade."</p>
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-neon-green font-bold text-lg border border-zinc-800">E</div>
+                            <div class="w-10 h-10 rounded-full bg-black flex items-center justify-center text-neon-green font-bold text-lg border border-zinc-800">A</div>
                             <div>
-                                <h4 class="font-bold text-white text-sm">Eder Nunes</h4>
+                                <h4 class="font-bold text-white text-sm">Anonimo</h4>
                                 <p class="text-xs text-zinc-400">Avaliação verificada</p>
                             </div>
                         </div>
@@ -244,12 +252,14 @@ Sempre que preciso de algo com celular ou notebook procuro por eles 😊"</p>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16 fade-in-section">
                     <h2 class="text-3xl md:text-5xl font-bold text-neon-green mb-4">Nossas Especialidades</h2>
+                    <!-- ALTERADO: text-neon-green (agora azul) -->
                     <p class="text-zinc-400 text-lg max-w-2xl mx-auto">Venda de eletrônicos premium e assistência técnica de confiança.</p>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     <!-- Card 1 -->
                     <div class="fade-in-section group bg-zinc-950 border border-zinc-900 hover:border-neon-green/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-neon">
+                        <!-- ALTERADO: hover:border-neon-green/50 e hover:shadow-neon agora em azul -->
                         <div class="w-14 h-14 bg-zinc-900 border border-zinc-800 rounded-xl flex items-center justify-center mb-6 group-hover:bg-neon-green/10 transition-colors">
                             <i data-lucide="smartphone" class="w-7 h-7 text-white group-hover:text-neon-green transition-colors"></i>
                         </div>
@@ -292,12 +302,14 @@ Sempre que preciso de algo com celular ou notebook procuro por eles 😊"</p>
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <div class="fade-in-section order-2 lg:order-1">
-                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Por que escolher a <span class="text-neon-green">TecnoSystem?</span></h2>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Por que escolher a <span class="text-neon-green">NC Celulares?</span></h2>
+                        <!-- ALTERADO: text-neon-green (agora azul) -->
                         <p class="text-zinc-400 mb-8">Trabalhamos duro para ser a melhor opção em tecnologia na cidade, unindo preço justo, transparência e velocidade.</p>
                         
                         <div class="space-y-6">
                             <div class="flex items-start gap-4">
                                 <div class="mt-1 bg-neon-green/20 p-2 rounded-full border border-neon-green/30">
+                                    <!-- ALTERADO: bg-neon-green/20 e border-neon-green/30 (agora azul) -->
                                     <i data-lucide="check" class="w-5 h-5 text-neon-green"></i>
                                 </div>
                                 <div>
@@ -339,8 +351,7 @@ Sempre que preciso de algo com celular ou notebook procuro por eles 😊"</p>
                     </div>
                     
                     <div class="fade-in-section order-1 lg:order-2">
-                        <!-- Imagem de ambiente ou abstrata tech -->
-                         <img src="https://scontent.fcpq2-1.fna.fbcdn.net/v/t39.30808-6/494768054_987806653338224_2428760791740562056_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeFFHLTIdoZKKE-H8q0SaxLp2FAWkY73S4DYUBaRjvdLgCOu6uamwstOu5V9HEvtNLBCWPmRPENAhW1G5Vug9Jqc&_nc_ohc=xI_ckru3-qEQ7kNvwHiyy19&_nc_oc=Adr51ojb1IR_BARUHhRWAkWJswzxhIwOJUmTIM0jCX62SLqjCuuCxrqdtWLdQsw64eYOFUR2Ua4I1sam6XBZCwfy&_nc_zt=23&_nc_ht=scontent.fcpq2-1.fna&_nc_gid=0FCkG2q7p66BsWQl98pd3Q&_nc_ss=7a3a8&oh=00_Af3UUTGgjwkq9PGgsH49yKUN-IScj2Wf3JtT7t9D_IHPlg&oe=69E9F08C" alt="Reparo de computadores e notebooks" class="rounded-2xl border border-zinc-800 shadow-neon w-full object-cover aspect-video lg:aspect-square">
+                        <img src="unnamed-Photoroom-removebg-preview.png"
                     </div>
                 </div>
             </div>
@@ -349,12 +360,14 @@ Sempre que preciso de algo com celular ou notebook procuro por eles 😊"</p>
         <!-- 5. Chamada forte para ação -->
         <section class="py-24 relative overflow-hidden">
             <div class="absolute inset-0 bg-neon-green/5"></div>
+            <!-- ALTERADO: bg-neon-green/5 (agora azul suave) -->
             <div class="max-w-4xl mx-auto px-4 text-center relative z-10 fade-in-section">
                 <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Precisa de um celular novo ou conserto rápido?</h2>
                 <p class="text-xl text-zinc-300 mb-10">Fale com um de nossos especialistas agora mesmo e faça um orçamento sem compromisso.</p>
-                <a href="https://api.whatsapp.com/send?phone=5519996489111&text=Olá!%20Vim%20pelo%20site%20e%20preciso%20de%20ajuda." 
+                <a href="" 
                    target="_blank"
-                   class="inline-flex items-center justify-center gap-3 bg-neon-green hover:brightness-110 text-black font-bold py-5 px-10 rounded-full shadow-neon hover:shadow-neon-hover transition-all duration-300 text-xl w-full sm:w-auto">
+                   class="inline-flex items-center justify-center gap-3 bg-neon-green hover:brightness-110 text-white font-bold py-5 px-10 rounded-full shadow-neon hover:shadow-neon-hover transition-all duration-300 text-xl w-full sm:w-auto">
+                   <!-- ALTERADO: text-black → text-white -->
                     <i class="fa-brands fa-whatsapp text-2xl"></i>
                     Chamar no WhatsApp agora
                 </a>
@@ -375,10 +388,11 @@ Sempre que preciso de algo com celular ou notebook procuro por eles 😊"</p>
                             <div class="flex items-center gap-4">
                                 <div class="w-12 h-12 bg-zinc-950 border border-zinc-900 rounded-xl flex items-center justify-center">
                                     <i data-lucide="map-pin" class="w-6 h-6 text-neon-green"></i>
+                                    <!-- ALTERADO: text-neon-green (agora azul) nos ícones de contato -->
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-white">Endereço</h4>
-                                    <p class="text-zinc-400">Rua São José, 97 - Vila Paraíso<br>Mogi Guaçu - SP</p>
+                                    <p class="text-zinc-400"><br>Mogi Guaçu - SP</p>
                                 </div>
                             </div>
 
@@ -388,7 +402,7 @@ Sempre que preciso de algo com celular ou notebook procuro por eles 😊"</p>
                                 </div>
                                 <div>
                                     <h4 class="font-bold text-white">Telefone / WhatsApp</h4>
-                                    <p class="text-zinc-400">(19) 99648-9111</p>
+                                    <p class="text-zinc-400">(19) 99999-9999</p>
                                 </div>
                             </div>
 
@@ -404,23 +418,25 @@ Sempre que preciso de algo com celular ou notebook procuro por eles 😊"</p>
                         </div>
 
                         <div class="pt-4">
-                            <a href="https://maps.google.com/?q=Rua+São+José,+97+-+Vila+Paraíso,+Mogi+Guaçu+-+SP" 
+                            <a href="https://maps.google.com" 
                                target="_blank"
                                class="inline-flex items-center justify-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-white font-medium py-3 px-6 rounded-lg border border-zinc-800 transition-all duration-300">
                                 <i data-lucide="navigation" class="w-5 h-5 text-neon-green"></i>
+                                <!-- ALTERADO: text-neon-green (agora azul) -->
                                 Ver no Mapa
                             </a>
                         </div>
                     </div>
 
                     <div class="fade-in-section rounded-2xl overflow-hidden border border-zinc-900 min-h-[300px] bg-zinc-950 relative flex items-center justify-center group">
-                        <!-- Imagem de mapa simulado -->
                         <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center opacity-20 mix-blend-luminosity"></div>
                         <div class="absolute inset-0 bg-black/70 group-hover:bg-black/50 transition-colors"></div>
                         <div class="relative z-10 text-center">
-                             <a href="https://maps.google.com/?q=Rua+São+José,+97+-+Vila+Paraíso,+Mogi+Guaçu+-+SP" target="_blank" class="flex flex-col items-center">
+                             <a href="https://maps.google.com" target="_blank" class="flex flex-col items-center">
                                 <i data-lucide="map" class="w-12 h-12 text-neon-green mb-3"></i>
-                                <span class="font-bold text-black text-lg bg-neon-green px-4 py-2 rounded-lg backdrop-blur-sm transition-all shadow-neon hover:shadow-neon-hover">Abrir Google Maps</span>
+                                <!-- ALTERADO: text-neon-green (agora azul) no ícone do mapa -->
+                                <span class="font-bold text-white text-lg bg-neon-green px-4 py-2 rounded-lg backdrop-blur-sm transition-all shadow-neon hover:shadow-neon-hover">Abrir Google Maps</span>
+                                <!-- ALTERADO: text-black → text-white no botão do mapa -->
                              </a>
                         </div>
                     </div>
@@ -434,18 +450,19 @@ Sempre que preciso de algo com celular ou notebook procuro por eles 😊"</p>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-center gap-2">
                 <i data-lucide="cpu" class="w-6 h-6 text-neon-green"></i>
-                <span class="text-xl font-bold text-white">Tecno<span class="text-neon-green">System Games</span></span>
+                <span class="text-xl font-bold text-white">NC<span class="text-neon-green"> Celulares</span></span>
+                <!-- ALTERADO: text-neon-green (agora azul) -->
             </div>
             
             <p class="text-zinc-500 text-sm text-center md:text-left">
-                &copy; <span id="year"></span> TecnoSystem Game, Celular & Informática. Todos os direitos reservados.
+                &copy; <span id="year"></span> NC Celulares Game, Celular & Informática. Todos os direitos reservados.
             </p>
 
             <div class="flex items-center gap-4">
-                <a href="https://www.instagram.com/tecnosystem.games/" target="_blank" class="w-12 h-12 rounded-full bg-zinc-950 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-[#E4405F] hover:border-[#E4405F]/50 transition-all" aria-label="Instagram">
+                <a href="https://www.instagram.com" target="_blank" class="w-12 h-12 rounded-full bg-zinc-950 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-[#E4405F] hover:border-[#E4405F]/50 transition-all" aria-label="Instagram">
                     <i class="fa-brands fa-instagram text-2xl"></i>
                 </a>
-                <a href="https://www.facebook.com/tecnosystem.ti/?locale=pt_BR" target="_blank" class="w-12 h-12 rounded-full bg-zinc-950 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-[#1877F2] hover:border-[#1877F2]/50 transition-all" aria-label="Facebook">
+                <a href="https://www.facebook.com" target="_blank" class="w-12 h-12 rounded-full bg-zinc-950 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-[#1877F2] hover:border-[#1877F2]/50 transition-all" aria-label="Facebook">
                     <i class="fa-brands fa-facebook text-2xl"></i>
                 </a>
             </div>
@@ -454,13 +471,9 @@ Sempre que preciso de algo com celular ou notebook procuro por eles 😊"</p>
 
     <!-- Scripts -->
     <script>
-        // Inicializar ícones Lucide
         lucide.createIcons();
-
-        // Atualizar ano do Copyright
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Lógica de Fade In Animation no Scroll
         document.addEventListener("DOMContentLoaded", function() {
             const observerOptions = {
                 root: null,
@@ -472,7 +485,7 @@ Sempre que preciso de algo com celular ou notebook procuro por eles 😊"</p>
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('is-visible');
-                        observer.unobserve(entry.target); // Anima apenas uma vez
+                        observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
